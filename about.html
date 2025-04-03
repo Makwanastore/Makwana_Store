@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makwana Store</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons (Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+     <!-- Bootstrap & Custom JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Images/Logo.png" alt="Logo" class="logo">
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class='bx bx-menu'></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="shop.html" id="shopDropdown" role="button" data-bs-toggle="dropdown">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Men</a></li>
+                            <li><a class="dropdown-item" href="#">Women</a></li>
+                            <li><a class="dropdown-item" href="#">Kids</a></li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Search Bar with Autocomplete -->
+                <div class="search-container">
+                    <input class="form-control search-input" type="text" id="searchInput" placeholder="Search products..." aria-label="Search">
+                    <button class="btn btn-search"><i class='bx bx-search'></i></button>
+                    <div class="autocomplete-results"></div>
+                </div>
+
+                <!-- Icons -->
+                <div class="nav-icons">
+                    <a href="login.html" class="nav-icon"><i class='bx bx-user'></i></a>
+                    <a href="cart.html" class="nav-icon cart">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="page-header" class="about-hero">
+        <h2 class="fade-in">Create Your Own Unique Style With</h2>
+        <h2 class="slide-in">Customized Apparel,</h2>
+        <h2 class="zoom-in">Accessories and More</h2>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="Images/About/About.jpg" alt="About Us" class="about-img fade-in">
+                </div>
+                <div class="col-md-6 about-container">
+                    <h1>About Us</h1>
+                    <p><strong>Welcome to Makwana Store – Where Fashion Meets Heartfelt Gifting!</strong></p>
+                    <p>
+                        At Makwana Store, we blend creativity and practicality to bring you the best in apparel and personalized gifts.
+                        Established with the vision of creating a one-stop shop for fashion-forward individuals and thoughtful gifters, we
+                        pride ourselves on offering high-quality products that celebrate moments and memories.
+                    </p>
+                    <h2>Our Mission</h2>
+                    <p>To inspire meaningful connections through unique gifting solutions and stylish apparel that cater to your personality
+                        and occasion.</p>
+
+                    <h2>What We Offer</h2>
+                    <ul>
+                        <li><strong>Trendy Apparel:</strong> Stylish outfits that reflect your personality.</li>
+                        <li><strong>Personalized Gifts:</strong> Custom mugs, wallets, T-shirts, and more.</li>
+                        <li><strong>Quality You Can Trust:</strong> Premium, durable, and unique products.</li>
+                    </ul>
+
+                    <h2>Why Choose Us?</h2>
+                    <ul>
+                        <li><strong>Affordable Prices:</strong> Premium products at budget-friendly prices.</li>
+                        <li><strong>Customization Options:</strong> Add a personal touch to your gifts.</li>
+                        <li><strong>Excellent Service:</strong> Seamless shopping & great customer support.</li>
+                    </ul>
+                    
+                    <a href="contact.html" class="btn btn-primary cta-btn bounce">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer Section -->
+        <footer class="footer bg-dark text-light pt-5 pb-3">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3 mb-3">
+                        <img src="Images/Logo.png" alt="MakwanaStore" class="footer-logo">
+                        <p class="company-info">
+                            <i class="bi bi-geo-alt"></i>Borivali Magathane Depot  
+                            <br><i class="bi bi-telephone"></i>+91 9152100750
+                            <br><i class="bi bi-envelope"></i>info@makwanastore.com
+                        </p>
+                        <!-- Instagram Icon Below Company Info -->
+                        <a href="https://www.instagram.com/makwanastore.com_fashion/?igsh=ZjN3cm1rZzdpcW4z" class="social-icon"><i class="bi bi-instagram"></i></a>
+                    </div>
+    
+                    <!-- Quick Links -->
+                    <div class="col-md-3 mb-3">
+                        <h3 class="fw-bold">Quick Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html" class="footer-link"><i class="bi bi-house-door"></i> Home</a></li>
+                            <li><a href="shop.html" class="footer-link"><i class="bi bi-shop"></i> Shop</a></li>
+                            <li><a href="about.html" class="footer-link"><i class="bi bi-info-circle"></i> About Us</a></li>
+                            <li><a href="contact.html" class="footer-link"><i class="bi bi-envelope"></i> Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Useful Links -->
+                    <div class="col-md-3 mb-3">
+                        <h3 class="fw-bold">Useful Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="footer-link"><i class="bi bi-truck"></i> Shipping Info</a></li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-shield-lock"></i> Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-file-earmark-text"></i> Terms & Conditions</a></li>
+                            <li><a href="#" class="footer-link"><i class="bi bi-credit-card"></i> Payment Methods</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Payment Methods -->
+                    <div class="col-md-3 mb-3">
+                        <h3 class="fw-bold">We Accept</h3>
+                        <img src="Images/Pay/Visa.png" alt="Visa" class="payment-icon">
+                        <img src="Images/Pay/Mastercard.png" alt="MasterCard" class="payment-icon">
+                        <img src="Images/Pay/RazorPay.png" alt="RazorPay" class="payment-icon">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="copyright">
+                © 2025 <span class="fw-bold">MakwanaStore</span> | All Rights Reserved
+            </div>
+            
+    
+        </footer>
+    
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/9152100750" class="whatsapp-float" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+
+        <!-- Bootstrap & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
